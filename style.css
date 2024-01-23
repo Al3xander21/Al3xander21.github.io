@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,700;1,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;600;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&display=swap');
 
 *{
     transition: all 0.7s ease;
@@ -12,6 +11,11 @@ body {
     margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
+}
+
+body.menu-open{
+    max-width: 60%;
+    margin: 0% 0% 0% 2%;
 }
 
 div.testata{
@@ -29,7 +33,7 @@ div.navbar{
     box-shadow: 0px 2px 3px 2px black;
     overflow: hidden;
     transition: all 1s cubic-bezier(.215, .61, .355, 1);
-    opacity: 0px;
+    opacity: 0;
 }
 
 .menu-open .navbar{
@@ -42,7 +46,7 @@ div.contenitoreoggetti{
 }
 
 img.dentronavbar{
-    display:none;
+    opacity: 0;
 }
 
 .navbar__menu li a{
@@ -74,6 +78,13 @@ div.icone{
     margin: 18px auto;
 }
 
+div.supremo{
+    max-width: 85%;
+    margin: 140px auto 0%;
+    font-size: 190%;
+}
+
+
 img#iniziale{
     max-width: 97%;
     margin: 0px 10px;
@@ -90,7 +101,7 @@ div#supremo{
 h1.dentrotestata{
     text-align: center;
     text-decoration: solid;
-    font-size: 400%;
+    font-size: 290%;
 }
 
 img.dentrocontenuto{
@@ -113,11 +124,17 @@ div#piedipagina{
 div#piedipagina p{
 
     text-align: center;
-    padding: 50px;
-
+    padding: 30px;
+    height: min-content;
 }
 
 @media screen and (min-width: 1300px){
+   
+    div.testata{
+        width: 100%;
+        font-size: 140%;
+    }
+   
     div.icone{
         display:none;
     }
@@ -128,10 +145,30 @@ div#piedipagina p{
         width: 100%;
     }
     
+    div.contenitoreoggetti{
+        max-width: 90%;
+        max-height: 90%;
+        display: flex;
+        justify-content: space-between;
+        margin: 0px auto;
+        justify-content: center;
+    }
+
+    .navbar__menu li{
+        display: inline-block;
+        padding: 7px;
+        padding-top: 5px;
+        font-size: 150%;
+        margin: 0px 30px 0px 30px;
+    }
+
     img.dentronavbar{
-        max-height: 50px;
-        float: left;
-        margin: 5px 3% 5px 1%;
+        opacity: 1;
+        max-height: 60px;
+        float: right;
+        position: fixed;
+        top: 15px;
+        left: 15px;
     }
 
     
