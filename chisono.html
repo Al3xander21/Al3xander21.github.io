@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>PortfolioAlessandro</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <div class="testata">
+        <div class="navbar">
+                <div class="contenitoreoggetti">
+                <img class="dentronavbar" src="a-photoaidcom-cropped.png" alt="dragonball">
+                <ul class="navbar__menu">
+                <li id="Home" >
+                   <a href="index.html">Home</a>
+                </li>
+                <li id="galleria" >
+                   <a href="galleria.html">Galleria</a>
+                </li>
+                </ul>
+            </div>
+        </div>
+        <div class="icone">
+            <div class="panino">
+               <span id="span1"></span>
+               <span id="span2"></span>
+            </div>
+        </div>
+    </div>
+    <body>
+
+        <div class="supremo">
+            <div id="testata">
+                <h1 class="dentrotestata"> My Portfolio</h1>
+                <hr style="size: 5; color: white;">
+
+            </div>
+            <div id="contenuto">
+                      
+                       
+            </div>
+        </div>
+        <div id="piedipagina">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium labore consectetur voluptates vel harum obcaecati quibusdam, similique omnis ex, sapiente maiores debitis ducimus perspiciatis eius fugiat reiciendis quod laboriosam adipisci?</p>
+         </div>
+    </body>
+
+    <script> 
+
+        let item = document.querySelector('.icone');
+        item.addEventListener("click", function() {
+          document.body.classList.toggle('menu-open');
+        });
+                     
+    </script>
+
+</html>

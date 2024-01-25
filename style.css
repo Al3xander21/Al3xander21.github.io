@@ -42,11 +42,15 @@ div.navbar{
 }
 
 div.contenitoreoggetti{
-    margin-top: 50%;
+    margin-top: 150px;
 }
 
 img.dentronavbar{
     opacity: 0;
+}
+ 
+.menu-open img.dentronavbar{
+    display: none;
 }
 
 .navbar__menu li a{
@@ -122,7 +126,6 @@ div#piedipagina{
 }
 
 div#piedipagina p{
-
     text-align: center;
     padding: 30px;
     height: min-content;
