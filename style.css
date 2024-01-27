@@ -4,6 +4,10 @@
     transition: all 0.7s ease;
 }
 
+html,body{
+    height: 100%;
+}
+
 body {
     background-color:#181818;
     color:white;
@@ -84,7 +88,7 @@ div.icone{
 
 div.supremo{
     max-width: 85%;
-    margin: 140px auto 0%;
+    margin: 140px auto -400px;
     font-size: 190%;
 }
 
@@ -120,7 +124,7 @@ img.dentrocontenuto{
 div#piedipagina{
     background-color: #3A413D;
     width: 99,9%;
-    height: 200px;
+    height: 400px;
     box-shadow: 0px -1px 7px 1px black;
     margin: 150px 10px 0px;
 }
@@ -129,6 +133,18 @@ div#piedipagina p{
     text-align: center;
     padding: 30px;
     height: min-content;
+    font-size: 160%;
+}
+
+div.push{
+    height: 400px;
+    clear :both;
+}
+
+.menu-open .push{
+    height: 400px;
+    clear :both;
+    
 }
 
 @media screen and (min-width: 1300px){
@@ -175,4 +191,29 @@ div#piedipagina p{
     }
 
     
+}
+
+
+
+
+
+/*Galleria CSS*/
+
+table{
+    table-layout: fixed;
+    width: 90%;
+    height: 80%;
+    margin: 130px auto;
+    border: 3px solid white;
+    border-collapse: collapse;
+    
+}
+
+table img{
+    width: 80%;
+}
+
+td{
+    border: 3px solid white;
+    text-align: center;
 }
